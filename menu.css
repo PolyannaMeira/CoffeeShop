@@ -1,0 +1,235 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    background-color: antiquewhite;
+}
+
+.header{
+    position:fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    
+    border-bottom: var(--border);
+    width: 100vw;
+}
+.header section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 50px;
+    padding: 1.5rem 0;
+    position: relative;
+}
+
+.header section img {
+    height: 6rem;
+}
+.header section nav a{
+    margin: 0 1rem;
+    font-size: 1.2rem;
+    color: #fff;
+    transition: 0.4s linear;
+}
+
+.header section nav a:hover{
+    color: var(--main-color);
+    border-bottom: 0.1rem solid var(--main-color);
+    padding-bottom: 0.5rem;
+}
+
+
+.container {
+    width: 100%;
+    height: var(--height);
+    mask-image: linear-gradient(to right, transparent, #000 10%, 90%, transparent);
+    margin-top: 150px;
+}
+
+.container-reverse {
+    width: 100%;
+    height: var(--height);
+    mask-image: linear-gradient(to left, transparent, #000 10%, 90%, transparent);
+}
+
+.container, .container-reverse {
+    margin-bottom: 80px; 
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.carousel {
+    width: 100%;
+    display: flex;
+    position: relative;
+    gap: 10px;
+}
+
+.item {
+    width: var(--width);
+    height: var(--height);
+    position: absolute;
+    left: 100%;
+    animation: autoRun 12s linear infinite;
+    animation-delay: calc(12 / var(--quantity) * var(--delay)) !important;
+    cursor: pointer;
+    transition: transform 0.3s ease, z-index 0.3s ease;
+    z-index: 1;
+}
+
+.item img {
+    flex: 0 0 auto; 
+    width: 100%; /* Faz a imagem ocupar toda a largura do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    object-fit: cover; /* Ajusta como a imagem é exibida no contêiner */
+    max-width: 250px; /* Limita o tamanho máximo em telas maiores */
+    max-height: 250px; /* Garante que não ultrapasse os limites */
+    border-radius: 8px;
+}
+
+
+
+.item:hover {
+    transform: scale(1.2); /* Aumenta o tamanho da imagem em 20% */
+    z-index: 2; /* Traz a imagem para frente */
+}
+
+.container-reverse .item {
+    animation: reverseRun 12s linear infinite;
+}
+
+.container:hover .item {
+    animation-play-state: paused;
+    filter: grayscale(1);
+}
+
+.container .item:hover {
+    filter: grayscale(0);
+}
+
+.container-reverse:hover .item {
+    animation-play-state: paused;
+    filter: grayscale(1);
+}
+
+.container-reverse .item:hover {
+    filter: grayscale(0);
+}
+
+
+
+.description-box {
+    position: absolute;
+    background: rgba(232, 171, 171, 0.8);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 200px;
+    display: none;
+    font-size: 14px;
+    z-index: 100;
+    pointer-events: none; /* Evita problemas de clique */
+}
+
+
+
+@keyframes autoRun {
+    from { left: 100%; }
+    to { left: -50%; }
+}
+
+@keyframes reverseRun {
+    from { left: -50%; } /* Antes estava 100% */
+    to { left: 100%; } /* Agora ele vai para a direita */
+}
+
+
+/* Responsivo para Tablets (largura até 768px) */
+@media (max-width: 768px) {
+    .header section {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px; /* Mais espaçamento entre os elementos */
+    }
+
+    .header section nav a {
+        font-size: 1.4rem;
+    }
+
+    .item img {
+        max-width: 150px;
+        max-height: 150px;
+    }
+
+    .container,
+    .container-reverse {
+        margin-top: 100px;
+        margin-bottom: 50px;
+    }
+    .item {
+        width: 150px; /* Reduz largura dos itens no carrossel */
+        height: 150px; /* Reduz altura dos itens no carrossel */
+    }
+
+    .item img {
+        max-width: 100%; /* Ajusta largura da imagem */
+        max-height: 100%; /* Ajusta altura da imagem */
+        border-radius: 5px;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+    .header section {
+        flex-direction: row; /* Alinha itens na horizontal */
+        justify-content: space-between; /* Espaçamento entre logo e links */
+        align-items: center; /* Centraliza verticalmente */
+    }
+
+    .header section nav {
+        justify-content: flex-start; /* Links alinhados à esquerda */
+    }
+
+    .header section nav a {
+        font-size: 1.2rem; /* Reduz tamanho dos links */
+        margin: 0 0.5rem; /* Espaçamento reduzido entre links */
+    }
+
+    .header section img {
+        height: 3rem; /* Tamanho menor do logo */
+    }
+    .container, .container-reverse {
+        margin-top: 100px;
+        margin-bottom: 20px;
+        height: 120px;
+        
+    }       
+    .carousel {
+        
+        animation-duration: 12s; /* Acelera ainda mais a animação */
+    }
+
+
+    .item {
+        width: 120px; /* Largura das imagens no celular */
+        height: 120px; /* Altura das imagens no celular */
+    }
+
+    .item img {
+        max-width: 100%;
+        max-height: 100%;
+        border-radius: 5px; /* Bordas menores */
+        gap: 50px; /* Espaçamento menor entre as imagens */
+    }
+}

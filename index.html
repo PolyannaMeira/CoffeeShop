@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), camera=(), microphone=()">
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Mineirice Cafe</title>
+  </head>
+  <body>
+    <div class="mascara-form" onclick="hideForm()"></div>
+
+    <div class="box-video">
+      <video src="./Videos/Mineirice.mp4" loop muted autoplay style=></video>
+      <div class="mask"></div>
+    </div>
+
+    <header class="header">
+      <section>
+        <a href="#">
+          <img src="./img/log-mineirice.png" alt="logo-coffee" />
+        </a>
+        <nav>
+          
+          <a href="./about.html">Sobre nós</a>
+          <a href="./menu.html" >Menu</a>
+          <a href="#" onclick="showModal()">Endereço</a>
+          <a href="#" onclick="showForm()">Fale Conosco</a>
+
+        </nav>
+      </section>
+    </header>
+    
+      <section class="main-box">
+        <div>
+          <h3>O melhor café da Região</h3>
+          <p>
+            Com aquele carinho de casa de vó, oferecemos a você um espaço acolhedor, repleto de sabores que nos transportam à infância, mas com um toque de modernidade e sofisticação. Trabalhamos com grãos de café cuidadosamente selecionados e uma variedade de sabores gourmet, perfeitos para quem aprecia inovar e elevar a experiência do paladar.
+          </p>
+          
+          
+        </div>
+      </section>
+
+        <a class="whatsapp"><img src="./img/whatsapp.png" /></a>
+
+        <form action="https://formsubmit.co/mineiricecafe@yahoo.com" method="POST" class="fale-conosco">
+            <input type="text" name="name" placeholder="Seu Nome" required style="color: #682614;">
+            <input type="email" name="email" placeholder="Email" required style="color: #682614;">
+            <textarea type="text" placeholder="Deixe sua mensagem" style="color: #682614;"></textarea>
+            <button type="submit" style="color: #682614;">Enviar</button>
+        </form>
+      
+        
+      <div class="modal">
+        <h3 class="title"><span>Nosso </span>Endereço</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3774.1190210231493!2d-48.283862924215256!3d-18.92612520783639!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94a444fdd65c7b2b%3A0x5565c39b6c9a659f!2sR.%20Augusto%20C%C3%A9sar%2C%20160%20-%20Fundinho%2C%20Uberl%C3%A2ndia%20-%20MG%2C%2038400-162%2C%20Brasil!5e0!3m2!1spt-BR!2sbe!4v1738856354737!5m2!1spt-BR!2sbe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="mask-modal" onclick="hideModal()"></div>
+      
+        
+      
+   
+  </body>
+  <script src="./scripts.js"></script>
+</html>

@@ -1,0 +1,85 @@
+/* Estilo Geral */
+body {
+    background-color: antiquewhite;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilização do Header */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 50px;
+    padding: 1.5rem 2rem;
+    position: relative;
+}
+
+.logo {
+    height: 6rem;
+}
+
+/* Link de Voltar */
+.back-link {
+    margin: 0 1rem;
+    font-size: 1.4rem;
+    color: #d3ad7f;
+    transition: 0.4s linear;
+    border-bottom: 0.1rem solid #d3ad7f;
+    padding-bottom: 0.5rem;
+    text-decoration: none;
+}
+
+.back-link:hover {
+    opacity: 0.7;
+}
+
+/* 🔹 Container Principal */
+.content {
+    display: flex; /* Ativa Flexbox */
+    align-items: center; /* Alinha os itens no centro */
+    justify-content: space-between; /* Espaço entre o texto e a imagem */
+    gap: 40px; /* Espaço entre os elementos */
+    max-width: 80%;
+    margin: 50px auto; /* Centraliza na tela */
+}
+
+/* 🔹 Estilização do Texto */
+.text-container {
+    flex: 1; /* Ocupa metade do espaço disponível */
+    max-width: 50%; /* Define que ocupa no máximo 50% da tela */
+    color: #682614;
+    font-size: 18px;
+}
+
+.text-container h2 {
+    font-size: 20px; /* Tamanho do título */
+    margin-bottom: 15px; /* Espaço entre o título e o texto */
+}
+
+
+.cafe-image {
+    flex: 1; /* Permite que a imagem ocupe o espaço disponível */
+    max-width: 350px; /* Define um tamanho máximo fixo para a imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 10px; /* Bordas arredondadas para um visual mais bonito */
+}
+
+
+  @media (max-width: 768px) {
+    .content {
+      flex-direction: column; /* Empilha os elementos */
+      align-items: center; /* Centraliza */
+      text-align: center; /* Alinha o texto no centro */
+    }
+  
+    .text {
+      max-width: 100%; /* O texto ocupa toda a largura */
+    }
+  
+    .cafe-image {
+      width: 250px; /* Reduz um pouco a imagem */
+    }
+  }
+  
