@@ -39,7 +39,7 @@ The design was crafted to provide a pleasant experience, featuring:
 ## 🛠️ How to Run the Project
 1. Clone this repository:
    ```bash
-   git clone https://github.com/your-username/coffee-shop.git
+   git clone https://github.com/PolyannaMeira/coffee-shop.git
    ```
 2. Navigate to the project folder:
    ```bash
