@@ -71,7 +71,10 @@ body {
     .content {
       flex-direction: column; /* Empilha os elementos */
       align-items: center; /* Centraliza */
-      text-align: center; /* Alinha o texto no centro */
+      text-align:justify; /* Alinha o texto no centro */
+      width: 100%; /* Aumenta a largura */
+      max-width: 1200px; /* Define um limite para telas grandes */
+      height: 80vh;
     }
   
     .text {
