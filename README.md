@@ -1,6 +1,7 @@
 # ☕ CoffeeShop - Café Website
 
 Welcome to the **CoffeeShop** repository, an interactive webpage for a coffee shop, developed using **HTML, CSS, and JavaScript**.
+You can visite:  https://polyannameira.github.io/CoffeeShop/
 
 ## 🌟 Overview
 This project aims to create an immersive experience for coffee shop customers, showcasing the menu, operating hours, and contact information, while providing a responsive and modern navigation experience.
@@ -39,11 +40,11 @@ The design was crafted to provide a pleasant experience, featuring:
 ## 🛠️ How to Run the Project
 1. Clone this repository:
    ```bash
-   git clone https://github.com/PolyannaMeira/coffee-shop.git
+   git clone https://github.com/PolyannaMeira/CoffeeShop.git
    ```
 2. Navigate to the project folder:
    ```bash
-   cd coffee-shop
+   cd CoffeeShop
    ```
 3. Open the `index.html` file in your browser
 4. To edit the code, use an editor like **VS Code**
