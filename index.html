@@ -1,73 +1,212 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <meta http-equiv="Permissions-Policy" content="accelerometer=(), camera=(), microphone=()">
+<html lang="pt-BR">
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <title>Mineirice Cafe</title>
-  </head>
-  <body>
-    <div class="mascara-form" onclick="hideForm()"></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mineirice Café</title>
 
-    <div class="box-video">
-      <video src="./Videos/Mineirice.mp4" loop muted autoplay style=></video>
-      <div class="mask"></div>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+
+  <meta http-equiv="Permissions-Policy" content="accelerometer=(), camera=(), microphone=()" />
+</head>
+
+<body>
+  
+  <header class="header">
+    <a href="#">
+      <img src="./img/log-mineirice.png" alt="Logo Mineirice Café" class="logo" />
+    </a>
+    <nav class="nav">
+      <a href="#about">Sobre Nós</a>
+      <a href="#menu">Menu</a>
+      <a href="#contact">Endereço</a>
+      <a href="#contact">Fale Conosco</a>
+    </nav>
+  </header>
+
+
+  <section class="hero">
+    <div class="container">
+      <h1>O melhor café <br>da região</h1>
+      <p>
+        Com aquele carinho de casa de vó, oferecemos a você um espaço acolhedor, repleto de sabores que nos transportam
+        à infância, mas com um toque de modernidade e sofisticação.
+      </p>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+
+    <h2 >Mineirice Café</h2>
+    <div class="row">
+      <div class="text">
+        <p>
+          A Mineirice Café nasceu da saudade. Saudade da infância, da casa da vó,
+          daquele cheirinho de pão quentinho saindo do forno e do café passado na
+          hora. Daqueles momentos simples e cheios de carinho, onde o tempo
+          parecia desacelerar e tudo era vivido com mais sabor. Foi dessa
+          nostalgia boa que surgiu a vontade de criar um espaço onde memórias
+          pudessem ser revividas e novas histórias pudessem ser escritas. Aqui,
+          tudo é preparado no local, com ingredientes regionais e da melhor
+          qualidade. Nossos cafés são feitos com grãos selecionados e blends
+          gourmets, garantindo uma experiência única a cada xícara. Mais do que um
+          café, a Mineirice é um refúgio. Um lugar aconchegante e iluminado,
+          perfeito para quem busca um momento de pausa no dia, uma conversa boa ou
+          até mesmo um cantinho especial para trabalhar. Contamos com um espaço de
+          coworking para quem precisa de um ambiente inspirador e um jardim
+          encantador, ideal para encontros ao ar livre e celebrações especiais. Na
+          Mineirice Café, cada detalhe é pensado com carinho, porque acreditamos
+          que café bom é aquele que aquece a alma e traz boas lembranças.
+          <br> Venha viver essa experiência com a gente!
+        </p>
+      </div>
+      <div class="image">
+        <img src="./img/Mineirica Cafe.png" alt="Ambiente do café" />
+      </div>
     </div>
 
-    <header class="header">
-      <section>
-        <a href="#">
-          <img src="./img/log-mineirice.png" alt="logo-coffee" />
-        </a>
-        <nav>
-          
-          <a href="./about.html">Sobre nós</a>
-          <a href="./menu.html" >Menu</a>
-          <a href="#" onclick="showModal()">Endereço</a>
-          <a href="#" onclick="showForm()">Fale Conosco</a>
 
-        </nav>
-      </section>
-    </header>
-    
-      <section class="main-box">
-        <div>
-          <h3>O melhor café da Região</h3>
-          <p>
-            Com aquele carinho de casa de vó, oferecemos a você um espaço acolhedor, repleto de sabores que nos transportam à infância, mas com um toque de modernidade e sofisticação. Trabalhamos com grãos de café cuidadosamente selecionados e uma variedade de sabores gourmet, perfeitos para quem aprecia inovar e elevar a experiência do paladar.
-          </p>
-          
-          
+  </section>
+  <section id="menu" class="menu-section">
+    <h2 class="title">Delícias da Casa</h2>
+    <div class="menu-grid">
+      <div class="menu-card">
+        <img src="./img/Crocante Karaiba.jpg" alt="Crocante Karaiba" />
+        <div class="menu-info">
+          <h3>Crocante Karaiba</h3>
+          <p>Massa folheada com queijo brie, bacon e geleia de jabuticaba.</p>
+        </div>
+      </div>
+      <div class="menu-card">
+        <img src="./img/Biscoito de polvilho.jpg" alt="Biscoito de polvilho" />
+        <div class="menu-info">
+          <h3>Biscoito de polvilho</h3>
+          <p>Biscoito de polvilho, com goiabada</p>
+        </div>
+      </div>
+      <div class="menu-card">
+        <img src="./img/Pao com carne de panela.jpg" alt="Pao Frances com linguiça" />
+        <div class="menu-info">
+          <h3>Pão francês recheado com carne de panela</h3>
+          <p>Pão francês recheado com carne de panela, com gostinho de casa de vó.</p>
+        </div>
+      </div>
+
+      <div class="menu-card">
+        <img src="./img/Marrache cake.jpg" alt="Biscoito de polvilho" />
+        <div class="menu-info">
+          <h3>Cheesecake de pistache</h3>
+          <p>Cheesecake de pistache, com uma base de biscoito crocante e um creme de patisserie do chef</p>
+        </div>
+      </div>
+
+      <div class="menu-card">
+        <img src="./img/Pave.jpg" alt="Pavê" />
+        <div class="menu-info">
+          <h3>Pavê</h3>
+          <p>Pavê de ouro branco, recheio cremoso e crocante</p>
+        </div>
+      </div>
+      <div class="menu-card">
+        <img src="./img/Bolo de mandioca.jpg" alt="Bolo de mandioca" />
+        <div class="menu-info">
+          <h3>Bolo de mandioca</h3>
+          <p>Bolo de mandioca, molhadinho e com muitoooo queijo</p>
+        </div>
+      </div>
+
+      <div class="menu-card">
+        <img src="./img/cafe.jpg" alt="Cafés" />
+        <div class="menu-info">
+          <h3>Cafés</h3>
+          <p>Cafe com grãos especiais, com nota de chocolate, pimenta, notas de frutas vermelhas</p>
+        </div>
+      </div>
+      <div class="menu-card">
+        <img src="./img/cafe coado na hora.jpg" alt="Cafés" />
+        <div class="menu-info">
+          <h3>Cafés</h3>
+          <p>Cafe coado na sua mesa, com cheirinho de casa de vó</p>
+        </div>
+      </div>
+      <div class="menu-card">
+        <img src="./img/cafeteira italiana.png" alt="Cafés" />
+        <div class="menu-info">
+          <h3>Café Italiano</h3>
+          <p>Cafe na cafeteira italiano, uma forma diferente e que transforma nosso cafe do dia-a-dia</p>
+        </div>
+      </div>
+
+
+      <div class="menu-card">
+        <img src="./img/Cappuccino.webp" alt="Cafés" />
+        <div class="menu-info">
+          <h3>Cappuccino</h3>
+          <p>Cappuccino com Chantily</p>
+        </div>
+      </div>
+
+      <div class="menu-card">
+        <img src="./img/cappuccino com nutela.jpg" alt="Cafés" />
+        <div class="menu-info">
+          <h3>Cappuccino</h3>
+          <p>Cappuccino com nutela</p>
+        </div>
+      </div>
+
+      <div class="menu-card">
+        <img src="./img/chocolate-quente-seo.webp" alt="Cafés" />
+        <div class="menu-info">
+          <h3>Chocolate Quente</h3>
+          <p>Chocolate Quente com chantily"</p>
+        </div>
+      </div>
+
+    </section>
+      <section id="contact" class="contact-section">
+        <h2>Fale com a gente ☕</h2>
+      
+        <div class="contact-container">
+          <!-- Formulário -->
+           
+          <form action="https://formsubmit.co/mineiricecafe@yahoo.com" method="POST" class="fale-conosco">
+            <h3>Deixe uma mensagem, uma sugestão, um depoimento. <br>Queremos ouvir você!!!</h3>
+            <input type="text" name="name" placeholder="Seu Nome" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <textarea name="message" placeholder="Deixe sua mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+          </form>
+      
+          <!-- Mapa -->
+          <div class="mapa-box">
+            <h3>Nosso Endereço</h3>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3774.1190210231493!2d-48.283862924215256!3d-18.92612520783639!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94a444fdd65c7b2b%3A0x5565c39b6c9a659f!2sR.%20Augusto%20C%C3%A9sar%2C%20160%20-%20Fundinho%2C%20Uberl%C3%A2ndia%20-%20MG%2C%2038400-162%2C%20Brasil!5e0!3m2!1spt-BR!2sbr!4v1713123230000!5m2!1spt-BR!2sbr"
+              width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
         </div>
       </section>
+      
+      
+      <a 
+  href="https://wa.me/5534999999999?text=Olá%20Mineirice%20Café,%20gostaria%20de%20fazer%20um%20pedido!" 
+  class="whatsapp" 
+  target="_blank"
+>
+  <img src="./img/whatsapp.png" alt="WhatsApp">
+</a>
+<footer>
+  <img width="50" height="50" src="https://img.icons8.com/fluency/50/instagram-new.png" alt="instagram-new"/>
+  <img width="50" height="50" src="https://img.icons8.com/color/50/facebook.png" alt="facebook"/>
+<p>@Mineirice Café</p>
+<p>R. Augusto César, 160. Fundinho, Uberlândia-MG</p>
+<p>2024</p>
+</footer>
+</body>
 
-        <a class="whatsapp"><img src="./img/whatsapp.png" /></a>
-
-        <form action="https://formsubmit.co/mineiricecafe@yahoo.com" method="POST" class="fale-conosco">
-            <input type="text" name="name" placeholder="Seu Nome" required style="color: #682614;">
-            <input type="email" name="email" placeholder="Email" required style="color: #682614;">
-            <textarea type="text" placeholder="Deixe sua mensagem" style="color: #682614;"></textarea>
-            <button type="submit" style="color: #682614;">Enviar</button>
-        </form>
-      
-        
-      <div class="modal">
-        <h3 class="title"><span>Nosso </span>Endereço</h3>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3774.1190210231493!2d-48.283862924215256!3d-18.92612520783639!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94a444fdd65c7b2b%3A0x5565c39b6c9a659f!2sR.%20Augusto%20C%C3%A9sar%2C%20160%20-%20Fundinho%2C%20Uberl%C3%A2ndia%20-%20MG%2C%2038400-162%2C%20Brasil!5e0!3m2!1spt-BR!2sbe!4v1738856354737!5m2!1spt-BR!2sbe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-      <div class="mask-modal" onclick="hideModal()"></div>
-      
-        
-      
-   
-  </body>
-  <script src="./scripts.js"></script>
 </html>
